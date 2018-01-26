@@ -21,7 +21,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 /**
- * @author suncheng@kuaishou.com
+ * @author Damon Sun
  * @date 26/01/2018
  */
 public class Yocache {

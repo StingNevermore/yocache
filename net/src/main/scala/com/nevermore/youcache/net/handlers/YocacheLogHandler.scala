@@ -4,9 +4,9 @@ import com.nevermore.yocache.log.Logging
 import io.netty.channel.{ChannelHandlerContext, ChannelInboundHandlerAdapter}
 
 /**
-  * @author suncheng@kuaishou.com
+  * @author Damon Sun
   */
-class WorkerLogSaveHandler extends ChannelInboundHandlerAdapter with Logging {
+class YocacheLogHandler extends ChannelInboundHandlerAdapter with Logging {
   this.logIdent = "[worker]"
 
   override def channelRead(ctx: ChannelHandlerContext, msg: scala.Any): Unit = {

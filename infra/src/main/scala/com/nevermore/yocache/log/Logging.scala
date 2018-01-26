@@ -4,7 +4,7 @@ import com.typesafe.scalalogging.LazyLogging
 import org.slf4j.{Marker, MarkerFactory}
 
 /**
-  * @author suncheng@kuaishou.com
+  * @author Damon Sun
   */
 private object Logging {
   private val FatalMarker: Marker = MarkerFactory.getMarker("FATAL")
