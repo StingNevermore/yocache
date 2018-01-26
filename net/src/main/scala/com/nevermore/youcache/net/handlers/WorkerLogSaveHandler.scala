@@ -1,20 +1,23 @@
 package com.nevermore.youcache.net.handlers
 
+import com.nevermore.yocache.log.Logging
 import io.netty.channel.{ChannelHandlerContext, ChannelInboundHandlerAdapter}
-import org.slf4j.LoggerFactory
 
 /**
   * @author suncheng@kuaishou.com
   */
-class WorkerLogSaveHandler extends ChannelInboundHandlerAdapter {
-  private val LOGGER = LoggerFactory.getLogger(classOf[WorkerLogSaveHandler])
+class WorkerLogSaveHandler extends ChannelInboundHandlerAdapter with Logging {
+  this.logIdent = "[worker]"
 
   override def channelRead(ctx: ChannelHandlerContext, msg: scala.Any): Unit = {
-    LOGGER.info("{}", msg)
+    info(s"received a msg $msg")
     ctx.write("received! \n")
   }
 
   override def channelReadComplete(ctx: ChannelHandlerContext): Unit = {
+    info(s"flushing")
     ctx.flush()
   }
 }
+
+
