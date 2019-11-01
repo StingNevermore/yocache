@@ -24,7 +24,7 @@
         <yocache.version>0.1-SNAPSHOT</yocache.version>
         <slf4j.version>1.7.25</slf4j.version>
         <logback.version>1.2.3</logback.version>
-        <netty.version>4.1.20.Final</netty.version>
+        <netty.version>4.1.42.Final</netty.version>
         <scala.version>2.11.11</scala.version>
         <scala.binary.version>2.11</scala.binary.version>
         <scala.maven.plugin.version>3.2.1</scala.maven.plugin.version>
