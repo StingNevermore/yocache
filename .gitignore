@@ -5,27 +5,15 @@ target/
 !**/src/test/**/target/
 
 ### IntelliJ IDEA ###
-.idea/compiler.xml
-.idea/**/gradle.xml
-.idea/**/libraries.idea/usage.statistics.xml
-.idea/workspace.xml
-.idea/modules
-.idea/shelf
-.idea/tasks.xml
-.idea/**/dictionaries
-.idea/artifacts
-.idea/jarRepositories.xml
-.idea/modules.xml
-.idea/kotlinc.xml
-.idea/*.iml
 *.iws
 *.iml
 *.ipr
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-.idea/misc.xml
-.idea/libraries
+.idea
+!.idea/checkstyle-idea.xml
+!.idea/codeStyles
 
 ### VS Code ###
 .vscode/

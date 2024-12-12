@@ -1,4 +1,4 @@
-package com.nevermore.yocache.server
+package com.nevermore.yocache
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
