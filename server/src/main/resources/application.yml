@@ -1,3 +1,5 @@
 yocache:
-  server:
-    port: 8080
+  app:
+    storage-service: local_cache
+server:
+  port: 8080

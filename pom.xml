@@ -28,6 +28,9 @@
         <guava.version>33.3.1-jre</guava.version>
         <netty.version>4.1.115.Final</netty.version>
         <lombok.version>1.18.36</lombok.version>
+
+        <commons.lang3.version>3.17.0</commons.lang3.version>
+        <commons.collections4.version>4.4</commons.collections4.version>
     </properties>
     <modules>
         <module>server</module>
@@ -36,13 +39,6 @@
     </modules>
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-bom</artifactId>
-                <version>${netty.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
             <dependency>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-bom</artifactId>
@@ -56,6 +52,17 @@
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons.lang3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${commons.collections4.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.nevermore</groupId>
                 <artifactId>infra</artifactId>
