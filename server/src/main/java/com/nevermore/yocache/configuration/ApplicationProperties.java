@@ -16,6 +16,6 @@ public class ApplicationProperties {
     private StorageService storageService = StorageService.LOCAL_CACHE;
 
     public enum StorageService {
-        LOCAL_CACHE,
+        LOCAL_CACHE, ROCKS_ENGINE,
     }
 }

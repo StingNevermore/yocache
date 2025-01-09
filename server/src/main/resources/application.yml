@@ -1,5 +1,8 @@
 yocache:
   app:
     storage-service: local_cache
+  rocks:
+    path: /Users/suncheng/rocks_tests
+    ttl-seconds: 3600
 server:
   port: 8080

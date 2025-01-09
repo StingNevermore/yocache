@@ -31,6 +31,7 @@
 
         <commons.lang3.version>3.17.0</commons.lang3.version>
         <commons.collections4.version>4.4</commons.collections4.version>
+        <rocksdb.version>6.6.4</rocksdb.version>
     </properties>
     <modules>
         <module>server</module>
@@ -61,6 +62,11 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-collections4</artifactId>
                 <version>${commons.collections4.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.rocksdb</groupId>
+                <artifactId>rocksdbjni</artifactId>
+                <version>${rocksdb.version}</version>
             </dependency>
 
             <dependency>
