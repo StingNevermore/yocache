@@ -1,10 +1,9 @@
 package com.nevermore.yocache.storage.rocks;
 
-import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-import java.io.File;
+import lombok.Data;
 
 /**
  * @author nevermore
@@ -14,6 +13,6 @@ import java.io.File;
 @Component
 @ConfigurationProperties("yocache.rocks")
 public class RocksEngineProperties {
-    private File path;
+    private String path;
     private long ttlSeconds;
 }
