@@ -23,6 +23,9 @@ public class RocksDBWrapper {
 
     private RocksDB db;
 
+    /**
+     * 初始化 RocksDB
+     */
     @PostConstruct
     private void init() {
         RocksDB.loadLibrary();
